@@ -1,0 +1,38 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quoted Horror - Horror Books</title>
+    <link rel="stylesheet" href="/book.css">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1 class="logo">Quoted Horror</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/books">Horror Books</a>
+        <a href="/extra">Extra</a>
+      </nav>
+    </header>
+
+    <!-- Book Scroll Container -->
+    <div class="book-scroll-container">
+      <% for(i = 0; i < items.length; i++) { %>
+        <div class="book-wrapper">
+          <div class="book-card">
+            <div class="book-cover" style="background-image: url('<%=items[i].image%>');"></div>
+            <div class="book-info">
+              <h3><%= items[i].name %></h3>
+              <p><%= items[i].author %></p>
+              <blockquote><%= items[i].quote %></blockquote>
+            </div>
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>

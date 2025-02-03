@@ -1,0 +1,151 @@
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;  /* Elegant and classy font */
+    font-size: 36px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0 0 5px red;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: red;
+    text-shadow: 0 0 5px red;
+}
+
+/* Book Scroll Container */
+.book-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    margin-top: 100px; /* To account for fixed header */
+    gap: 30px; /* Increased gap between cards */
+}
+
+/* Styling the Scrollbar */
+.book-scroll-container::-webkit-scrollbar {
+    width: 2px; /* Super thin scrollbar */
+    height: 3px;
+}
+
+.book-scroll-container::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/* Book Wrapper */
+.book-wrapper {
+    flex-shrink: 0; /* Prevents cards from shrinking */
+    width: 360px; /* Slightly smaller cards */
+    height: 560px; /* Slightly smaller cards */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Book Card */
+.book-card {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    border: 2px solid white;
+    border-radius: 0px; /* Sharp edges, no curve */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Book Cover (Image) */
+.book-cover {
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Book Info (Visible on hover) */
+.book-info {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.book-card:hover .book-info {
+    display: block;
+}
+
+/* Hover Effects */
+.book-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #333;
+    border-color: red;
+}
+
+.book-info h3,
+.book-info p,
+.book-info blockquote {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.book-info blockquote {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Smooth Hover Effects for Book Info */
+.book-card:hover .book-info h3,
+.book-card:hover .book-info p,
+.book-card:hover .book-info blockquote {
+    transition: all 0.3s ease;
+    opacity: 1;
+}

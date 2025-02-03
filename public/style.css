@@ -1,0 +1,134 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://m.media-amazon.com/images/S/pv-target-images/26e49b382251d45099112916e7948a3df57f37994c8ff086135d557b187d471a.jpg') no-repeat center center/cover;
+    color: white;
+    font-family: 'Merriweather', serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* HEADER & NAV */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 0 0 10px red;
+    animation: flicker 1.5s infinite alternate;
+}
+
+nav {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+.site-title {
+    font-size: 24px;
+    color: white;
+    text-shadow: 0 0 10px red;
+    font-weight: 700;
+}
+
+
+/* RESTYLED HORROR BUTTON */
+.horror-btn {
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding: 15px 35px;  /* Reduced padding */
+    border: 2px solid red;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    position: absolute;
+    top: 42%;
+    left: 30%; /* Slightly adjusted to the left */
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    animation: button-flicker 3.0s infinite alternate; /* Added flicker effect */
+}
+
+.horror-btn:hover {
+    background: red;
+    color: black;
+    box-shadow: 0 0 20px red;
+    text-shadow: 0 0 10px black;
+}
+
+.horror-btn span {
+    display: block;
+    font-weight: bold;
+}
+
+/* ANIMATIONS */
+@keyframes flicker {
+    0% {
+        opacity: 0.6;
+        text-shadow: 0 0 10px red, 0 0 30px red;
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 20px red, 0 0 40px red;
+    }
+    100% {
+        opacity: 0.6;
+        text-shadow: 0 0 10px red, 0 0 30px red;
+    }
+}
+
+/* BUTTON FLICKER EFFECT */
+@keyframes button-flicker {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
