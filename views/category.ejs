@@ -20,7 +20,7 @@
     <!-- Book Scroll Container -->
     <div class="book-scroll-container">
         <% for(i = 0; i < items.length; i++) { %>
-            <a href="/books/<%=items[i].path%>" class="book-wrapper">
+            <a href="/books/<%= i %>" class="book-wrapper">
                 <div class="book-card">
                     <div class="book-cover" style="background-image: url('<%=items[i].image%>');"></div>
                     <div class="book-info">

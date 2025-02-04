@@ -78,7 +78,7 @@ nav a:hover {
     text-align: left;
     position: absolute;
     top: 25%;
-    left: 17%;
+    left: 15%;
     max-width: 500px;
     text-shadow: 0 0 10px red, 0 0 20px black;
 }
@@ -95,8 +95,8 @@ nav a:hover {
     font-family: 'Merriweather', serif;
     cursor: pointer;
     position: absolute;
-    top: 55%;
-    left: 17%; /* Slightly adjusted to the left */
+    top: 60%;
+    left: 15%; /* Slightly adjusted to the left */
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out;
     animation: button-flicker 3.0s infinite alternate; /* Added flicker effect */

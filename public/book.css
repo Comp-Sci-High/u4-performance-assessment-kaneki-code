@@ -81,8 +81,8 @@ nav a:hover {
 /* Book Wrapper */
 .book-wrapper {
     flex-shrink: 0; /* Prevents cards from shrinking */
-    width: 310px; /* Slightly smaller cards */
-    height: 510px; /* Slightly smaller cards */
+    width: 300px; /* Slightly smaller cards */
+    height: 500px; /* Slightly smaller cards */
     position: relative;
     transition: all 0.3s ease-in-out;
 }
