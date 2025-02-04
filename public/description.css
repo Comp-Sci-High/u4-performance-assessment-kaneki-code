@@ -1,4 +1,3 @@
-/* // https://chatgpt.com/share/67a033b2-7d68-800e-8d2f-579cea5c4185 */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
 * {
@@ -12,7 +11,7 @@ body {
     background-size: 400% 400%;
     animation: smokyBackground 8s infinite ease-in-out;
     color: white;
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,6 +51,7 @@ nav a {
     color: white;
     font-size: 20px;
     transition: color 0.3s ease-in-out;
+    font-family: 'Playfair Display', serif;
 }
 
 nav a:hover {
@@ -107,7 +107,12 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
+/* Typewriter effect */
 .book-description {
     font-size: 18px;
     line-height: 1.6;
+    white-space: pre-wrap;
+    overflow: hidden;
+    border-right: 2px solid white; /* Cursor effect */
+    width: 100%;
 }
