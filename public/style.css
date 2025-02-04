@@ -1,5 +1,5 @@
 
-
+/* // https://chatgpt.com/share/67a033b2-7d68-800e-8d2f-579cea5c4185 */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
 * {
@@ -46,7 +46,7 @@ header {
 
 nav {
     display: flex;
-    gap: 100px;
+    gap: 35px;
     align-items: center;
 }
 
@@ -70,6 +70,19 @@ nav a:hover {
     font-weight: 700;
 }
 
+.horror-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    max-width: 500px;
+    text-shadow: 0 0 10px red, 0 0 20px black;
+}
+
 
 /* RESTYLED HORROR BUTTON */
 .horror-btn {
@@ -82,8 +95,8 @@ nav a:hover {
     font-family: 'Merriweather', serif;
     cursor: pointer;
     position: absolute;
-    top: 42%;
-    left: 30%; /* Slightly adjusted to the left */
+    top: 55%;
+    left: 17%; /* Slightly adjusted to the left */
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out;
     animation: button-flicker 3.0s infinite alternate; /* Added flicker effect */
@@ -132,3 +145,4 @@ nav a:hover {
         transform: scale(1);
     }
 }
+

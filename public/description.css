@@ -1,0 +1,113 @@
+/* // https://chatgpt.com/share/67a033b2-7d68-800e-8d2f-579cea5c4185 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(270deg, black, #121212, black);
+    background-size: 400% 400%;
+    animation: smokyBackground 8s infinite ease-in-out;
+    color: white;
+    font-family: 'Merriweather', serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes smokyBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 0 0 10px red;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+    margin-top: 100px;
+}
+
+.book-image {
+    width: 30%;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+
+.divider {
+    width: 3px;
+    height: 90%;
+    background: white;
+    transition: background 0.3s ease-in-out;
+}
+
+.divider:hover {
+    background: red;
+}
+
+.book-info {
+    width: 50%;
+    text-align: left;
+}
+
+.book-title {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.book-author {
+    font-size: 22px;
+    font-style: italic;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.book-description {
+    font-size: 18px;
+    line-height: 1.6;
+}

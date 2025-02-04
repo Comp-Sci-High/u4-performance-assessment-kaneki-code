@@ -1,4 +1,4 @@
-
+/* // https://chatgpt.com/share/67a033b2-7d68-800e-8d2f-579cea5c4185 */
 
 /* Basic Reset */
 * {
@@ -81,8 +81,8 @@ nav a:hover {
 /* Book Wrapper */
 .book-wrapper {
     flex-shrink: 0; /* Prevents cards from shrinking */
-    width: 360px; /* Slightly smaller cards */
-    height: 560px; /* Slightly smaller cards */
+    width: 310px; /* Slightly smaller cards */
+    height: 510px; /* Slightly smaller cards */
     position: relative;
     transition: all 0.3s ease-in-out;
 }
@@ -102,7 +102,7 @@ nav a:hover {
 /* Book Cover (Image) */
 .book-cover {
     width: 100%;
-    height: 70%;
+    height: 100%;
     background-size: cover;
     background-position: center;
 }
@@ -110,10 +110,10 @@ nav a:hover {
 /* Book Info (Visible on hover) */
 .book-info {
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 0;
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
 }
@@ -132,9 +132,9 @@ nav a:hover {
 .book-info h3,
 .book-info p,
 .book-info blockquote {
-    font-size: 18px;
+    font-size: 20px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .book-info blockquote {
