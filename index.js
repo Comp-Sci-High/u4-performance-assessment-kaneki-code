@@ -1,6 +1,4 @@
-
 // https://chatgpt.com/share/67a033b2-7d68-800e-8d2f-579cea5c4185
-// Task 1: Set up folders and move your files
 const express = require('express')
 const app = express()
 
