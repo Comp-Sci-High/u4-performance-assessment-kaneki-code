@@ -32,5 +32,19 @@
             </a>
         <% } %>
     </div>
+    <div class="book-scroll-container">
+        <% for(i = 0; i < items.length; i++) { %>
+            <a href="/books/<%= i %>" class="book-wrapper">
+                <div class="book-card">
+                    <div class="book-cover" style="background-image: url('<%=items[i].image%>');"></div>
+                    <div class="book-info">
+                        <h3><%=items[i].name%></h3>
+                        <p><%=items[i].author%></p>
+                        <blockquote><%=items[i].quote %></blockquote>
+                    </div>
+                </div>
+            </a>
+        <% } %>
+    </div>
 </body>
 </html>
